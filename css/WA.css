@@ -11,6 +11,10 @@ body {
     font-weight: bold;
 }
 
+nav-bar{
+  color: white;
+}
+
 #entity {
   background-color: black;
   color: inherit;
