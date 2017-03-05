@@ -7,7 +7,23 @@ body {
     padding-top: 25px;
     margin-top: 100px;
     position: relative;
-    font-family: 'Unica One', cursive;
     color: white;
     font-weight: bold;
+}
+
+#entity {
+  background-color: black;
+  color: inherit;
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 35px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: white;
+  }
+
+h1{
+  font-family: 'Carrois Gothic', sans-serif;
+  text-align: center;
 }
