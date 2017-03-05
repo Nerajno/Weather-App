@@ -1,0 +1,13 @@
+body {
+  background-image: url("https://c1.staticflickr.com/3/2900/33230796166_912d01c6a3_b.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 25px;
+    margin-top: 100px;
+    position: relative;
+    font-family: 'Unica One', cursive;
+    color: white;
+    font-weight: bold;
+}
