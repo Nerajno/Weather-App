@@ -27,6 +27,16 @@ nav-bar{
   border-color: white;
   }
 
+#getWeather {
+  background-color: black;
+  color: inherit;
+  display: block;
+  margin: auto;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: white;
+}
+
 h1{
   font-family: 'Carrois Gothic', sans-serif;
   text-align: center;
