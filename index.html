@@ -13,19 +13,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!--Links for css-->
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="css/WA.css" rel="stylesheet" type="text/css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
   <!--Jquery and JavaScript -->
   <!-- Jquery CDN-->
-  <script src="js/WA2.js"></script>
+  <script src="js/WA.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> -->
 
@@ -40,38 +45,83 @@
         <button class="navbar-toggle" data-target="#myNavBar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#" id="logo">NJ</a>
       </div>
       <div class="collapse navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
-          <li><a href="#Project">Projects</a></li>
-          <li><a href="#AboutUs">About Me</a></li>
+        <ul class="nav navbar-nav iamblue ">
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-spinner fa-pulse fa-1.4x fa-fw"></i> Front End Intermediate Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"> <i class="fa fa-random" aria-hidden="true"></i> Random Quote Machine  <i class="fa fa-check-square-o" aria-hidden="true"></i></li>
+                <li><a href="#"><i class="fa fa-sun-o" aria-hidden="true"></i> Weather App <i class="fa fa-refresh fa-spin fa-fw"></i></a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Wikipedia Viewer <i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch Tv Viewer <i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+
+            <li class="twtbtn"><button class="Twtbtn"><a class="btn btn-sm btn-navbar" href="https://twitter.com/nerajno" role="button" target="_blank"><span class="fa fa-twitter"></span> Say Hi </a></button></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end of Nav-bar -->
+
+
+
+      <div id="information" class="text-center">
+        <br />
+        <ul class="list-unstyled">
+
+
+
         </ul>
       </div>
-    </nav>
-    <!-- end of Nav-bar -->
 
-    <div id="entity">
-      <div>
-        <h1>Weather App</h1>
-        <button id="getWeather"> What is weather ? </button>
+      <div class="wrapper">
+        <div class="widget-container">
+          <div class="top-left">
+            <h1 class="city" id="city">Weather Widget App</h1>
+            <h2 id="day">Day</h2>
+            <h3 id="date">Month, Day Year</h3>
+            <h3 id="time">Time</h3>
+
+            <p class="geo"></p>
+          </div>
+          <div class="top-right">
+            <h1 id="weatherType"> Weather Status</h1>
+            <img class="weather-icon" src="">
+          </div>
+          <div class="horizontal-half-divider"></div>
+          <div class="bottom-left">
+            <h3 id="fTemp">&degF</h3>
+
+            <input id="fTemp" type="checkbox" checked data-toggle="toggle" data-on="" data-off="" data-onstyle="success" data-offstyle="danger">
+            <!-- I need to work on a button that toggles and displays the fTemp on one side and cTemp on the other side. -->
+            <input class="checkbox blue" id="checkbox2" type="checkbox"/>
+
+
+          </div>
+          <div class="vertical-half-divider"></div>
+          <div class="bottom-right">
+            <div class="other-details-key">
+              <p>Wind Speed</p>
+              <p>Humidity</p>
+              <p>Pressure</p>
+              <p> Sunrise Time</p>
+              <p>Sunset Time</p>
+            </div>
+            <div class="other-details-values">
+              <p class="windSpeed">0 mph</p>
+              <p class="humidity">0 %</p>
+              <p class="pressure">0 hPa</p>
+              <p class="sunriseTime">0:00 am</p>
+              <p class="sunsetTime">0:00 pm</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div id="temperature">
-
-      </div>
-      <!--Location-->
-      <div id="Location">
-        <p id="data">
-
-        </p>
-
-      </div>
-      <div id="icon"></div>
 
 
-      <!-- this holds every thing  -->
 
-    </div>
+      <footer>
 
-    <footer>
-
-    </footer>
-  </body>
-  </html>
+      </footer>
+    </body>
+    </html>
