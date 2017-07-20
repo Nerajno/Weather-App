@@ -89,31 +89,30 @@
           </div>
           <div class="horizontal-half-divider"></div>
           <div class="bottom-left">
-            <h3 id="fTemp">&degF</h3>
-
-            <input id="fTemp" type="checkbox" checked data-toggle="toggle" data-on="" data-off="" data-onstyle="success" data-offstyle="danger">
-            <!-- I need to work on a button that toggles and displays the fTemp on one side and cTemp on the other side. -->
-            <input class="checkbox blue" id="checkbox2" type="checkbox"/>
-
+            <button type="button" class="btn btn-primary" id="fTemp"> &degF</button>
 
           </div>
-          <div class="vertical-half-divider"></div>
-          <div class="bottom-right">
-            <div class="other-details-key">
-              <p>Wind Speed</p>
-              <p>Humidity</p>
-              <p>Pressure</p>
-              <p> Sunrise Time</p>
-              <p>Sunset Time</p>
+            <div class="vertical-half-divider"></div>
+            <div class="bottom-right">
+              <div class="other-details-key">
+                <p>Wind Speed</p>
+                <p>Humidity</p>
+                <p>Pressure</p>
+                <p> Sunrise Time</p>
+                <p>Sunset Time</p>
+              </div>
+              <div class="other-details-values">
+                <p class="windSpeed">0 mph</p>
+                <p class="humidity">0 %</p>
+                <p class="pressure">0 hPa</p>
+                <p class="sunriseTime">0:00 am</p>
+                <p class="sunsetTime">0:00 pm</p>
+              </div>
             </div>
-            <div class="other-details-values">
-              <p class="windSpeed">0 mph</p>
-              <p class="humidity">0 %</p>
-              <p class="pressure">0 hPa</p>
-              <p class="sunriseTime">0:00 am</p>
-              <p class="sunsetTime">0:00 pm</p>
-            </div>
+
           </div>
+
+
         </div>
 
       </div>
