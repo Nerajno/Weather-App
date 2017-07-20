@@ -34,26 +34,26 @@ $.getJSON("http://ip-api.com/json", function(data2){
     $.getJSON(api,function(data){
        var weatherType= data.weather[0].description;
       //matching background to weather description
-      if(weatherType ="clear sky"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/382085/pexels-photo-382085.jpeg)');
+      if(weatherType =="clear sky"){
+        $('body').css('background-image','url(https://static.pexels.com/photos/382085/pexels-photo-382085.jpeg)');//This link wrks
       }else if(weatherType =="few clouds"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/197505/pexels-photo-197505.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/197505/pexels-photo-197505.jpeg)');//This link wrks
       }else if(weatherType =="scattered clouds"){
-        $('body').css('background-image','url(https://pixabay.com/get/eb36b6092cf6043ed1534705fb0938c9bd22ffd41cb1114294f4c279a3/evening-2376425_1920.jpg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/491573/pexels-photo-491573.jpeg)');//This link wrks
       }else if(weatherType =="broken clouds"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/464431/pexels-photo-464431.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/464431/pexels-photo-464431.jpeg)');//This link wrks
       }else if(weatherType =="shower rain"){
-        $('body').css('background-image','url(https://pixabay.com/get/ef35b00d28fd1c22d9584518a33219c8b66ae3d019b1124090f1c17d/field-601209_1920.jpg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/7816/pexels-photo.jpg)');//This link wrks
       }else if(weatherType =="rain"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/516709/pexels-photo-516709.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/516709/pexels-photo-516709.jpeg)');//This link wrks
       }else if(weatherType =="thunderstorm"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/496383/pexels-photo-496383.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/496383/pexels-photo-496383.jpeg)');//This link wrks
       }else if(weatherType =="snow"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/488110/pexels-photo-488110.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/488110/pexels-photo-488110.jpeg)');//This link wrks
       }else if(weatherType =="mist"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/487946/pexels-photo-487946.jpeg)');
+        $('body').css('background-image','url(https://static.pexels.com/photos/487946/pexels-photo-487946.jpeg)');//This link wrks
       }else{
-      $('body').css('background-image','url(https://static.pexels.com/photos/295028/pexels-photo-295028.jpeg)');
+      $('body').css('background-image','url(https://static.pexels.com/photos/295028/pexels-photo-295028.jpeg)');//This link wrks
       }
     // experiment
     console.log(weatherType);
