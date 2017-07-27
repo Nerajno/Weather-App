@@ -1,9 +1,10 @@
 body {
   background-image: url("https://c1.staticflickr.com/3/2900/33230796166_912d01c6a3_b.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -o-background-size: 100%;
   padding-top: 25px;
   margin-top: 100px;
   position: relative;
@@ -17,15 +18,26 @@ body {
   font-weight: bold;
 }
 
-#logo{
+.navbar-inverse{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
   color:#3B81BF;
 }
+
 .navbar-inverse .navbar-nav>li>a {
   color: #3B81BF;
 }
 
+.dropdown{
+  color: #3B81BF;
+  text-transform:uppercase;
+}
+
 .dropdown-menu>li>a{
   color: #3B81BF;
+  text-transform:uppercase;
 }
 
 .Twtbtn{
@@ -40,218 +52,23 @@ body {
   background-color: #f0641f;
   color: black;
 }
-#getWeather {
-  background-color: black;
-  color: inherit;
-  display: block;
-  margin: auto;
-  border-radius: 7px;
-  border-style: solid;
-  border-color: white;
-}
 
 h1{
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family:'Open Sans', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
+.fa-free-code-camp {
+  color: #01ff04;
+}
 /* Lets do this and try a wrapper widget */
-.widget-container {
-  width: 612px;
-  height: 412px;
+.weatherInfo {
   display: block;
   background-color: #313e45;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
   border-radius: 25px;
-  border: 3.5px solid #eceff1;
   margin: 0 auto;
-}
-
-
-/* Widget 4 Quarter Division here */
-
-.top-left {
-  height: 60%;
-  width: 50%;
-  /*   background-color:red; */
-  padding: 55px 0 0 70px;
-  display: inline-block;
-}
-
-.top-right {
-  height: 60%;
-  width: 50%;
-  /*   background-color: blue; */
-  float: right;
-  padding: 55px 0 0 0;
-}
-
-.bottom-left {
-  height: 40%;
-  width: 45%;
-  /*   background-color:orange; */
-  float: left;
-  margin: 0;
-  padding: 40px 0 0 50px;
-}
-
-.bottom-right {
-  height: 40%;
-  width: 55%;
-  /*   background-color: brown; */
-  float: right;
-  padding: 25px 0 0 60px;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Top-left Div CSS */
-
-#city {
-  font-weight: 900;
-  font-size: 25px;
-}
-
-#day {
-  font-weight: 700;
-  font-size: 25px;
-  margin-top: 18px;
-}
-
-#date {
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 4px;
-}
-
-#time {
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 8px;
-}
-
-#codepen-link {
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.top-left > a {
-  text-decoration: none;
-  color: white;
-}
-
-.top-left > a:hover {
-  color: #b0bec5;
-}
-
-
-/* Top-Right Div CSS */
-
-#weather-status {
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.top-right > img {
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: 15px auto 0 auto;
-}
-
-
-/* Horizontal-Half-divider */
-
-.horizontal-half-divider {
-  width: 100%;
-  height: 3px;
-  margin-top: -5px;
-  background-color: #263238;
-}
-
-.vertical-half-divider {
-  width: 3px;
-  position: absolute;
-  height: 167px;
-  background-color: #263238;
-  float: right;
-  display: inline-block;
-  padding: 0;
-}
-
-
-/* Bottom-left CSS */
-
-#temperature,
-#celsius,
-#temp-divider,
-#fahrenheit {
-  display: inline;
-  vertical-align: middle;
-}
-
-#temperature {
-  font-size: 60px;
-  font-weight: 800;
-  margin-right: 5px;
-}
-
-#celsius {
-  margin-right: 10px;
-}
-
-#fahrenheit {
-  margin-right: 5px;
-  color: #b0bec5;
-}
-
-#celsius,
-#temp-divider,
-#fahrenheit {
-  font-size: 30px;
-  font-weight: 800;
-}
-
-#celsius:hover,
-#fahrenheit:hover {
-  cursor: pointer;
-}
-
-/* Bottom-Right CSS */
-.other-details-key {
-  float: left;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.other-details-values {
-  float: left;
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 40px;
-}
-
-.watermark-link {
-  text-decoration:none;
-  color:#b0bec5;
-}
-
-.watermark-link:hover {
-  color:white;
-  text-decoration:none;
-}
-
-.watermark {
-  margin-top:10px;
-  text-align:center;
-  font-weight:400;
+  text-transform: uppercase;
 }

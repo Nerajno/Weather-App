@@ -58,10 +58,9 @@ $.getJSON("http://ip-api.com/json", function(data2){
       // experiment
       console.log(weatherType);
 
-
-
-
-      //end of experiment 2
+      //experiment weather decription
+      var weatherId = data.weather[0].id;
+      console.log(weatherId);
 
       //Temperature in Kelvin
       var tempSwap=true;
@@ -70,17 +69,17 @@ $.getJSON("http://ip-api.com/json", function(data2){
       fTemp= (kTemp*(9/5)-459.67).toFixed(1);
 
       //temperature and you clicking on it to change between fTemp and cTemp
-      $("#fTemp").html(fTemp);
+      $("#fTemp").html(fTemp + " &#x2109");
       $("#fTemp").click(function() {
         console.log(tempSwap);
         if(tempSwap===true){
           console.log(" mej");
-          $("#fTemp").html(cTemp);
+          $("#fTemp").html(cTemp + " &#x2103");
           console.log('tempSwap was true, switching it to false');
           tempSwap=false;
         }
         else {
-          $("#fTemp").html(fTemp);
+          $("#fTemp").html(fTemp + " &#x2109");
           console.log('tempSwap was false, switching it to true');
           tempSwap=true;
         }
