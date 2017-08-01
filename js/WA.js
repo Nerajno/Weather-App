@@ -12,20 +12,20 @@ $(document).ready(function(){
 
   //get location code from freeCodecamp = http://bit.ly/2nxT7pG
   //version one
-  /*if(navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-  long = position.coords.longitude;
-  lat = position.coords.latitude;
-  $("#data").html("latitude:"+lat+"<br>longitude:"+long);
-  //console.log(long,lat);
-  weather(lat, long);
+if(navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position) {
+long = position.coords.longitude;
+lat = position.coords.latitude;
+$("#data").html("latitude:"+lat+"<br>longitude:"+long);
+console.log(long,lat);
+weather(lat, long);
 });
-};*/
+};
 
-//version two
-$.getJSON("http://ip-api.com/json", function(data2){
-  lat = data2.lat;
-  long = data2.lon;
+// //version two
+// $.getJSON("http://ip-api.com/json", function(data2){
+//   lat = data2.lat;
+//   long = data2.lon;
 
   //JSON call for Open weather API
   var weather = function(lat, lon){
@@ -77,7 +77,7 @@ $.getJSON("http://ip-api.com/json", function(data2){
       var cTemp = data.main.temp;
       console.log(cTemp);
       // fTemp= (kTemp*(9/5)-459.67).toFixed(1);
-      var fTemp = Math.round((cTemp*1.8)+32); 
+      var fTemp = Math.round((cTemp*1.8)+32);
 
       //temperature and you clicking on it to change between fTemp and cTemp
       $("#fTemp").html(fTemp + " &#x2109");
@@ -159,6 +159,4 @@ $.getJSON("http://ip-api.com/json", function(data2){
   };
   //calling the function
   weather(lat,long);
-});
-
 });
