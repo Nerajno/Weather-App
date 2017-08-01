@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 position: relative;
 margin-top: 100px;
@@ -85,3 +86,79 @@ background-color: #313e45;
 
 filter: alpha(opacity=60); /* For IE8 and earlier */
   }
+=======
+body {
+  background-image: url("https://c1.staticflickr.com/3/2900/33230796166_912d01c6a3_b.jpg");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat:no-repeat;
+  -o-background-size: 100%;
+  padding-top: 25px;
+  margin-top: 100px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+.container-fluid{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-inverse{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
+  color:#3B81BF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #3B81BF;
+}
+
+.dropdown{
+  color: #3B81BF;
+  text-transform:uppercase;
+}
+
+.dropdown-menu>li>a{
+  color: #3B81BF;
+  text-transform:uppercase;
+}
+
+.Twtbtn{
+  padding: 3px;
+  margin: 5px;
+  border-radius: 7px;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-navbar{
+  background-color: #f0641f;
+  color: black;
+}
+
+h1{
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fa-free-code-camp {
+  color: #01ff04;
+}
+/* Lets do this and try a wrapper widget */
+.weatherInfo {
+  display: block;
+  background-color: #313e45;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  border-radius: 25px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+>>>>>>> 2846bb868fd37310042eb35c831d193a30b819c6
