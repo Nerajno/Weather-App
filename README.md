@@ -6,4 +6,13 @@ https://nerajno.github.io/Weather-App/
 ## Built With
 - Font Awesome version 4.5.0 and Bootstrap 3.3.6.
 - Contains images from Pexel.org
-- Uses a fix for the Openweather Api { https://fcc-weather-api.glitch.me // GOOGLE IT  }   
+- Uses a fix for the Openweather Api { https://fcc-weather-api.glitch.me // GOOGLE IT  }
+
+### LICENSE
+Please feel free to use the this code as you need to.
+This repository adheres to the MIT License.
+
+##Acknowledgments
+Shout out to following person/s and crews :
+-FCC and FCC ATL
+-Mark, Krista, Ellen, Kenan, Esterling and Toby
