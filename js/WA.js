@@ -73,10 +73,11 @@ $.getJSON("http://ip-api.com/json", function(data2){
 
       //Temperature in Kelvin
       var tempSwap=true;
-      var kTemp= data.main.temp;
-      cTemp= (kTemp-273).toFixed(1);
-      fTemp= (kTemp*(9/5)-459.67).toFixed(1);
-      //fix me tomorrow 
+      // var kTemp= data.main.temp; => this was from the old weather Api
+      var cTemp = data.main.temp;
+      console.log(cTemp);
+      // fTemp= (kTemp*(9/5)-459.67).toFixed(1);
+      var fTemp = Math.round((cTemp*1.8)+32); 
 
       //temperature and you clicking on it to change between fTemp and cTemp
       $("#fTemp").html(fTemp + " &#x2109");
