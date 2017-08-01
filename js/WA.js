@@ -76,6 +76,7 @@ $.getJSON("http://ip-api.com/json", function(data2){
       var kTemp= data.main.temp;
       cTemp= (kTemp-273).toFixed(1);
       fTemp= (kTemp*(9/5)-459.67).toFixed(1);
+      //fix me tomorrow 
 
       //temperature and you clicking on it to change between fTemp and cTemp
       $("#fTemp").html(fTemp + " &#x2109");
@@ -116,9 +117,9 @@ $.getJSON("http://ip-api.com/json", function(data2){
       //Change the icon based on the weather description icon
       // there has to be a shorter way todo this
       var iconChange = data.weather[0].icon;
-      var url = "http://openweathermap.org/img/w/" + iconChange + ".png";
+      var url = "https://crossorigin.me/http://openweathermap.org/img/w/" + iconChange + ".png";
       // Writing it to html
-      $(".weather-icon").attr("src",url);
+      $(".weather-icon").attr("src",iconChange);
       console.log(iconChange);
       console.log(api);
 
