@@ -12,7 +12,7 @@ https://nerajno.github.io/Weather-App/
 Please feel free to use the this code as you need to.
 This repository adheres to the MIT License.
 
-##Acknowledgments
+## Acknowledgments
 Shout out to following person/s and crews :
 -FCC and FCC ATL
 -Mark, Krista, Ellen, Kenan, Esterling and Toby
