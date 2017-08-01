@@ -29,9 +29,12 @@ $.getJSON("http://ip-api.com/json", function(data2){
 
   //JSON call for Open weather API
   var weather = function(lat, lon){
+  //=> trying to use another api
     // Openweatherapi key and api
-    var apiKey = "&appid=10ddf1a5e1f2aa9f4b606d5025f56ed5";
-    var api ='https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=' +lat+'&lon=' +long+ apiKey;
+    // var apiKey = "&appid=10ddf1a5e1f2aa9f4b606d5025f56ed5";
+    // var api ='https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=' +lat+'&lon=' +long+ apiKey;
+    var api = "https://fcc-weather-api.glitch.me/api/current?lat=" +lat+'&lon=' +long;
+    //
 
     // //Darkskies api
     // var apiKey ="8fe3e553c2f7b48c94cdade366520eb2";
