@@ -20,7 +20,8 @@ body {
 
 .navbar-inverse{
   font-family: 'Montserrat', sans-serif;
-  
+  margin: auto;
+
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{

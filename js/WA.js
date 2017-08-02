@@ -14,8 +14,8 @@ $(document).ready(function(){
   //version one
 if(navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(function(position) {
-long = position.coords.longitude;
-lat = position.coords.latitude;
+long = position.coords.longitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
+lat = position.coords.latitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
 $("#data").html("latitude:"+lat+"<br>longitude:"+long);
 console.log(long,lat);
 weather(lat, long);
@@ -41,7 +41,7 @@ weather(lat, long);
     // // https://api.darksky.net/forecast/8fe3e553c2f7b48c94cdade366520eb2/37.8267,-122.4233
     // var api = "https://api.darksky.net/forecast/8fe3e553c2f7b48c94cdade366520eb2/37.8267,-122.4233";
     $.getJSON(api,function(data){
-      var weatherType= data.weather[0].description;
+      var weatherType= data.weather[0].description;//There is an error here.
       //matching background to weather description
       if(weatherType =="clear sky"){
         $('body').css('background-image','url(https://farm5.staticflickr.com/4316/35810956960_7b8a39ad75_h.jpg)');//This link wrks
