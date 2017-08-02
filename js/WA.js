@@ -48,9 +48,9 @@ weather(lat, long);
       }else if(weatherType =="few clouds"){
         $('body').css('background-image','url(https://farm5.staticflickr.com/4322/36203444075_b3b0b4a88c_h.jpg)');//This link wrks
       }else if(weatherType =="scattered clouds"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/491573/pexels-photo-491573.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4316/35810956060_f3217c1dba_h.jpg)');//This link wrks
       }else if(weatherType =="broken clouds"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/464431/pexels-photo-464431.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4306/36203442645_1aa47b94da_b.jpg)');//This link wrks
       }else if(weatherType =="shower rain"){
         $('body').css('background-image','url(https://static.pexels.com/photos/7816/pexels-photo.jpg)');//This link wrks
       }else if(weatherType =="rain"){
