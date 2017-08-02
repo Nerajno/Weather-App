@@ -44,9 +44,9 @@ weather(lat, long);
       var weatherType= data.weather[0].description;
       //matching background to weather description
       if(weatherType =="clear sky"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/382085/pexels-photo-382085.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4316/35810956960_7b8a39ad75_h.jpg)');//This link wrks
       }else if(weatherType =="few clouds"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/197505/pexels-photo-197505.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4322/36203444075_b3b0b4a88c_h.jpg)');//This link wrks
       }else if(weatherType =="scattered clouds"){
         $('body').css('background-image','url(https://static.pexels.com/photos/491573/pexels-photo-491573.jpeg)');//This link wrks
       }else if(weatherType =="broken clouds"){
