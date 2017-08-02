@@ -2,7 +2,7 @@ body {
   background-image: url("https://c1.staticflickr.com/3/2900/33230796166_912d01c6a3_b.jpg");
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat:no-repeat;
   -o-background-size: 100%;
   padding-top: 25px;
@@ -20,6 +20,7 @@ body {
 
 .navbar-inverse{
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{

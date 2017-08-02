@@ -52,15 +52,15 @@ weather(lat, long);
       }else if(weatherType =="broken clouds"){
         $('body').css('background-image','url(https://farm5.staticflickr.com/4306/36203442645_1aa47b94da_b.jpg)');//This link wrks
       }else if(weatherType =="shower rain"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/7816/pexels-photo.jpg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4293/35810955130_3da21a141e_b.jpg)');//This link wrks
       }else if(weatherType =="rain"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/516709/pexels-photo-516709.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4310/36203441755_63192dd4ab_b.jpg)');//This link wrks
       }else if(weatherType =="thunderstorm"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/496383/pexels-photo-496383.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4321/35810954050_82183a271b_b.jpg)');//This link wrks
       }else if(weatherType =="snow"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/488110/pexels-photo-488110.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4315/36203440875_12531c3b7d_b.jpg)');//This link wrks
       }else if(weatherType =="mist"){
-        $('body').css('background-image','url(https://static.pexels.com/photos/487946/pexels-photo-487946.jpeg)');//This link wrks
+        $('body').css('background-image','url(https://farm5.staticflickr.com/4321/36069119531_2c47513745_b.jpg)');//This link wrks
       }else{
         $('body').css('background-image','url(https://static.pexels.com/photos/295028/pexels-photo-295028.jpeg)');//This link wrks
       }
