@@ -14,10 +14,12 @@ $(document).ready(function(){
   //version one
 if(navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(function(position) {
-long = position.coords.longitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
-lat = position.coords.latitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
+long = position.coords.longitude;
+lat = position.coords.latitude;
+// long = position.coords.longitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
+// lat = position.coords.latitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
 $("#data").html("latitude:"+lat+"<br>longitude:"+long);
-console.log(long,lat);
+// console.log(long,lat);
 weather(lat, long);
 });
 };
@@ -34,6 +36,7 @@ weather(lat, long);
     // var apiKey = "&appid=10ddf1a5e1f2aa9f4b606d5025f56ed5";
     // var api ='https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=' +lat+'&lon=' +long+ apiKey;
     var api = "https://fcc-weather-api.glitch.me/api/current?lat=" +lat+'&lon=' +long;
+
     //
 
     // //Darkskies api
@@ -65,33 +68,33 @@ weather(lat, long);
         $('body').css('background-image','url(https://static.pexels.com/photos/295028/pexels-photo-295028.jpeg)');//This link wrks
       }
       // experiment
-      console.log(weatherType);
+      // console.log(weatherType);
 
       //experiment weather decription
       var weatherId = data.weather[0].id;
-      console.log(weatherId);
+      // console.log(weatherId);
 
       //Temperature in Kelvin
       var tempSwap=true;
       // var kTemp= data.main.temp; => this was from the old weather Api
       var cTemp = data.main.temp;
-      console.log(cTemp);
+      // console.log(cTemp);
       // fTemp= (kTemp*(9/5)-459.67).toFixed(1);
       var fTemp = Math.round((cTemp*1.8)+32);
 
       //temperature and you clicking on it to change between fTemp and cTemp
       $("#fTemp").html(fTemp + " &#x2109");
       $("#fTemp").click(function() {
-        console.log(tempSwap);
+        // console.log(tempSwap);
         if(tempSwap===true){
-          console.log(" mej");
+          // console.log(" mej");
           $("#fTemp").html(cTemp + " &#x2103");
-          console.log('tempSwap was true, switching it to false');
+          // console.log('tempSwap was true, switching it to false');
           tempSwap=false;
         }
         else {
           $("#fTemp").html(fTemp + " &#x2109");
-          console.log('tempSwap was false, switching it to true');
+          // console.log('tempSwap was false, switching it to true');
           tempSwap=true;
         }
       });
@@ -110,7 +113,7 @@ weather(lat, long);
       var sunsetTime= new Date(1000 * data.sys.sunset);
       var sunsetHr = sunsetTime.getHours();
       if (sunsetHr <= 11){
-        console.log("fix me please");
+        // console.log("fix me please");
       }else(sunsetHr > 11)
       sunsetHr = sunsetHr -12;
       sunsetTime= sunsetHr + ":" + sunsetTime.getMinutes();
@@ -121,14 +124,14 @@ weather(lat, long);
       var url = "https://crossorigin.me/http://openweathermap.org/img/w/" + iconChange + ".png";
       // Writing it to html
       $(".weather-icon").attr("src",iconChange);
-      console.log(iconChange);
-      console.log(api);
+      // console.log(iconChange);
+      // console.log(api);
 
       //experiment 2
       if( weatherType == "scattered clouds"|| iconChange =="03d"){
-        console.log("this is interstint");
+        // console.log("this is interstint");
       }else {
-        console.log("crap");
+        // console.log("crap");
       }
 
       //Writing them to Html
