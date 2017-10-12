@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   //DATE AND TIME//
   //Converted into days, months, hours, day-name, AM/PM
-  var dt = new Date()
+  var dt = new Date();
   var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   $('#day').html(days[dt.getDay()]);
 
@@ -22,7 +22,7 @@ $("#data").html("latitude:"+lat+"<br>longitude:"+long);
 // console.log(long,lat);
 weather(lat, long);
 });
-};
+}
 
 // //version two
 // $.getJSON("http://ip-api.com/json", function(data2){
@@ -30,13 +30,13 @@ weather(lat, long);
 //   long = data2.lon;
 
   //JSON call for Open weather API
-  var weather = function(lat, lon){
+  var weather = function(lat, long){
   //=> trying to use another api
     // Openweatherapi key and api
     // var apiKey = "&appid=10ddf1a5e1f2aa9f4b606d5025f56ed5";
     // var api ='https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=' +lat+'&lon=' +long+ apiKey;
     var api = "https://fcc-weather-api.glitch.me/api/current?lat=" +lat+'&lon=' +long;
-
+    console.log(api);
     //
 
     // //Darkskies api
@@ -44,7 +44,8 @@ weather(lat, long);
     // // https://api.darksky.net/forecast/8fe3e553c2f7b48c94cdade366520eb2/37.8267,-122.4233
     // var api = "https://api.darksky.net/forecast/8fe3e553c2f7b48c94cdade366520eb2/37.8267,-122.4233";
     $.getJSON(api,function(data){
-      var weatherType= data.weather[0].description;//There is an error here.
+      var weatherType= data.weather.description;//There is an error here.
+      console.log(weatherType);
       //matching background to weather description
       if(weatherType =="clear sky"){
         $('body').css('background-image','url(https://farm5.staticflickr.com/4316/35810956960_7b8a39ad75_h.jpg)');//This link wrks
@@ -152,10 +153,10 @@ weather(lat, long);
       //DATE AND TIME//
       //Converted into days, months, hours, day-name, AM/PM
       //Understood it but it took too long to code.
-      var dt = new Date()
+      var dt = new Date();
       var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
       $('#day').html(days[dt.getDay()]);
-      var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+      var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
       $('#date').html(months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear());
       $('#time').html((dt.getHours()>12?(dt.getHours()-12):dt.getHours()).toString() + ":" + ((dt.getMinutes() < 10 ? '0' : '').toString() + dt.getMinutes().toString()) + (dt.getHours() < 12 ? ' AM' : ' PM').toString());
     });
