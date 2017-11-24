@@ -10,12 +10,12 @@ $(document).ready(function(){
   var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   $('#day').html(days[dt.getDay()]);
 
-  //get location code from freeCodecamp = http://bit.ly/2nxT7pG
-  //version one
+//   //get location code from freeCodecamp = http://bit.ly/2nxT7pG
+//   //version one
 if(navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(function(position) {
-long = position.coords.longitude;
-lat = position.coords.latitude;
+navigator.geolocation.getCurrentPosition(function(position){
+  long = position.coords.longitude.toFixed(2);
+  lat = position.coords.latitude.toFixed(2);
 // long = position.coords.longitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
 // lat = position.coords.latitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
 $("#data").html("latitude:"+lat+"<br>longitude:"+long);
@@ -31,6 +31,22 @@ weather(lat, long);
 
   //JSON call for Open weather API
   var weather = function(lat, long){
+    //
+    // //get location code from freeCodecamp = http://bit.ly/2nxT7pG
+    // //version one
+    // if(navigator.geolocation) {
+    // navigator.geolocation.getCurrentPosition(function(position){
+    // long = position.coords.longitude.toFixed(2);
+    // lat = position.coords.latitude.toFixed(2);
+    // // long = position.coords.longitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
+    // // lat = position.coords.latitude.toFixed(2);//Saw the issues based on a console log....... fixed it I think
+    // $("#data").html("latitude:"+lat+"<br>longitude:"+long);
+    // // console.log(long,lat);
+    // weather(lat, long);
+    // });
+    // }
+
+
   //=> trying to use another api
     // Openweatherapi key and api
     // var apiKey = "&appid=10ddf1a5e1f2aa9f4b606d5025f56ed5";
@@ -115,7 +131,7 @@ weather(lat, long);
       var sunsetHr = sunsetTime.getHours();
       if (sunsetHr <= 11){
         // console.log("fix me please");
-      }else(sunsetHr > 11)
+      }else(sunsetHr > 11);
       sunsetHr = sunsetHr -12;
       sunsetTime= sunsetHr + ":" + sunsetTime.getMinutes();
 
