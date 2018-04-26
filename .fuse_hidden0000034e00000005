@@ -43,7 +43,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <!--.nav-collapse -->
-          <ul class="nav navbar-nav navbar-right" >
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="far fa-check-square"></i> Front End Intermediate Projects <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -53,20 +53,20 @@
                 <li><a href="https://nerajno.github.io/FCC-TwitchTV-Viewer/"><i class="fas fa-video" aria-hidden="true"></i> Twitch Tv Viewer <i class='far fa-check-square' aria-hidden="true"></i></a></li>
               </ul>
             </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-spinner fa-pulse fa-1.4x fa-fw"></i> Other FCC Front-End Projects <span class="caret"></span></a>
-                <ul class="dropdown-menu">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-spinner fa-pulse fa-1.4x fa-fw"></i> Other FCC Front-End Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
 
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-chart-line" aria-hidden="true"></i>  Tribute Page  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-briefcase" aria-hidden="true"></i>  Personal Portfolio  <i class="fa fa-spinner fa-pulse fa-fw"></i></a></li>
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-calculator" aria-hidden="true"></i>  Javascript Calculator  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-stopwatch" aria-hidden="true"></i>  Pomodoro Clock  <i class="fa fa-spinner fa-pulse fa-fw"></i></a></li>
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-gamepad" aria-hidden="true"></i>  Tic Tac Toe Game  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
-                  <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-trophy" aria-hidden="true"></i>  Simon Game  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
-                </ul>
-              </li>
-              <li class="twtbtn"><button class="Twtbtn"><a class="btn btn-sm btn-navbar" href="https://twitter.com/nerajno" role="button" target="_blank"><span class="fab fa-twitter"></span> Say Hi </a></button></li>
-            </ul>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-chart-line" aria-hidden="true"></i>  Tribute Page  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-briefcase" aria-hidden="true"></i>  Personal Portfolio  <i class="fa fa-spinner fa-pulse fa-fw"></i></a></li>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-calculator" aria-hidden="true"></i>  Javascript Calculator  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-stopwatch" aria-hidden="true"></i>  Pomodoro Clock  <i class="fa fa-spinner fa-pulse fa-fw"></i></a></li>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-gamepad" aria-hidden="true"></i>  Tic Tac Toe Game  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="https://nerajno.github.io/Terminus/#"><i class="fas fa-trophy" aria-hidden="true"></i>  Simon Game  <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+            <li class="twtbtn"><button class="Twtbtn"><a class="btn btn-sm btn-navbar" href="https://twitter.com/nerajno" role="button" target="_blank"><span class="fab fa-twitter"></span> Say Hi </a></button></li>
+          </ul>
 
         </div>
         <!-- </div></.nav-collapse> -->
