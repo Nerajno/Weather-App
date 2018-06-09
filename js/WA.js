@@ -97,7 +97,7 @@ weather(lat, long);
       var cTemp = data.main.temp;
       // console.log(cTemp);
       // fTemp= (kTemp*(9/5)-459.67).toFixed(1);
-      var fTemp = Math.round((cTemp*1.8)+32);
+      // var fTemp = Math.round((cTemp*1.8)+32);
 
       //temperature and you clicking on it to change between fTemp and cTemp
       $("#fTemp").html(fTemp + " &#x2109");
