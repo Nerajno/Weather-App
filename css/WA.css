@@ -10,6 +10,7 @@ body {
   position: relative;
   color: white;
   font-weight: bold;
+  height: 100vh;
 }
 
 .container-fluid{
