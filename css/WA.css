@@ -10,6 +10,7 @@ body {
   position: relative;
   color: white;
   font-weight: bold;
+  height: 100vh;
 }
 
 .container-fluid{
@@ -21,7 +22,6 @@ body {
 .navbar-inverse{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
-
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover{
@@ -41,6 +41,11 @@ body {
 .dropdown-menu>li>a{
   color: #3B81BF;
   text-transform:uppercase;
+}
+
+.container{
+  color: white;
+  width: 100%;
 }
 
 .Twtbtn{
