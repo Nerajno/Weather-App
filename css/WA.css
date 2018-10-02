@@ -82,3 +82,9 @@ h1{
   height: 125px;
   width: 125px;
 }
+
+.container, .container-nav{
+  color: white;
+  width: 100%;
+  padding-left: -10%;
+}
