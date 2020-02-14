@@ -25,4 +25,3 @@ TODO
 -[ ] Refactor Javascript to be more functional.
 -[ ] Fix Js geolocation issue.
 -[ ] Make mobile responsive.
-
