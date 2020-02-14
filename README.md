@@ -21,7 +21,7 @@ Shout out to following person/s and crews :
 -Mark, Krista, Ellen, Kenan, Esterling and Toby
 
 TODO
--[ ] Fix Navbar to be mobile responsive.
+-[x] Fix Navbar to be mobile responsive.
 -[ ] Refactor Javascript to be more functional.
 -[ ] Fix Js geolocation issue.
 -[ ] Make mobile responsive.
