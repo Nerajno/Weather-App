@@ -8,17 +8,13 @@ body {
   padding-top: 25px;
   margin-top: 100px;
   position: relative;
+  font-family: 'Unica One', cursive;
   color: white;
   font-weight: bold;
   height: 100vh;
 }
 
-.container-fluid{
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
+/* Start navbar */
 .navbar-inverse{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
@@ -57,6 +53,15 @@ body {
   color: black;
 }
 
+button{
+  font-family: 'Karla', sans-serif;
+  margin:20px;
+  border-radius: 5px;
+}
+
+/* End navbar */
+
+
 h1{
   font-family:'Open Sans', sans-serif;
   text-align: center;
@@ -68,6 +73,9 @@ h1{
 }
 /* Lets do this and try a wrapper widget */
 .weatherInfo {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
   display: block;
   background-color: #313e45;
   opacity: 0.6;
@@ -86,5 +94,5 @@ h1{
 .container, .container-nav{
   color: white;
   width: 100%;
-  padding-left: -10%;
+  /* padding-left: -10%; */
 }
