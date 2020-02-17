@@ -3,7 +3,7 @@
 This is the Weather-App from Free Code Camp's Front Certificate, through it's iteration it has used a couple of ideas and code from other places. The code is a bit hodge podge but like all great tinkers dreaming of being an engineer; IT WORKS.
 https://nerajno.github.io/Weather-App/
 
-# Screenshot
+## Screenshot
 ![Image of ScreenShot](https://github.com/Nerajno/Weather-App/blob/master/ScreenShot.png)
 
 
