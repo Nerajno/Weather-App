@@ -3,12 +3,15 @@
 This is the Weather-App from Free Code Camp's Front Certificate, through it's iteration it has used a couple of ideas and code from other places. The code is a bit hodge podge but like all great tinkers dreaming of being an engineer; IT WORKS.
 https://nerajno.github.io/Weather-App/
 
+# Screenshot
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 
 [testing](http://google.com){:target="_blank"}
 
 ## Built With
 - Font Awesome version 4.5.0 and Bootstrap 3.3.6.
-- Contains images from Pexel.org
+- Contains background images from Pexel.org
 - Uses a fix for the Openweather Api { https://fcc-weather-api.glitch.me // GOOGLE IT  }
 
 ### LICENSE-
@@ -22,6 +25,7 @@ Shout out to following person/s and crews :
 
 TODO
 -[x] Fix Navbar to be mobile responsive.
+-[x] Make mobile responsive.
 -[ ] Refactor Javascript to be more functional.
 -[ ] Fix Js geolocation issue.
--[ ] Make mobile responsive.
+
