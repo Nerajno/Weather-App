@@ -4,7 +4,7 @@ This is the Weather-App from Free Code Camp's Front Certificate, through it's it
 https://nerajno.github.io/Weather-App/
 
 # Screenshot
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of ScreenShot](https://github.com/Nerajno/Weather-App/blob/master/ScreenShot.png)
 
 
 [testing](http://google.com){:target="_blank"}
