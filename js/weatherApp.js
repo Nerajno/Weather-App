@@ -7,7 +7,7 @@
 // Sun up 
 // sun down
 
-let location = function getLocation() {
+let location = getLocation() => {
    
     function success(position) {
       const latitude  = position.coords.latitude.toFixed(2);
@@ -28,7 +28,10 @@ let location = function getLocation() {
       navigator.geolocation.getCurrentPosition(success, error);
     }
   
-  }
+  };
+
+  console.log(location);
+  
 
   var watchID = navigator.geolocation.watchPosition(function(position) {
     do_something(position.coords.latitude, position.coords.longitude);
