@@ -3,6 +3,7 @@ body {
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: cover;
+  background-position: center center;
   background-repeat:no-repeat;
   -o-background-size: 100%;
   padding-top: 25px;
@@ -83,7 +84,7 @@ h1{
   border-radius: 25px;
   margin: 0 auto;
   text-transform: uppercase;
-  width: 90%;
+  width: 90% !important; /*May be seen as lazy*/
 }
 
 .weather-icon{
