@@ -21,7 +21,9 @@ weather(lat, long);
 let weather = function(lat, long){
     let api = "https://fcc-weather-api.glitch.me/api/current?lat="+lat+'&lon='+long;
     $.getJSON(api,function(data){
-      let weatherType= data.weather.description;
+      let weatherType = data.weather[0].description;
+      console.log(weatherType, data);
+      
       if(weatherType =="clear sky"){
         $('body').css('background-image','url(https://farm5.staticflickr.com/4316/35810956960_7b8a39ad75_h.jpg)');//This link wrks
       }else if(weatherType =="few clouds"){
@@ -45,11 +47,14 @@ let weather = function(lat, long){
       }
 
       let weatherId = data.weather[0].id;
-    
-      let tempSwap=true;
+      console.log(weatherId);
       
-      let cTemp = data.main.temp;
- 
+      let tempSwap=false;
+      cTemp = (data.main.temp).toPrecision(2);
+      fTemp = (cTemp * 9 / 5 + 32).toPrecision(2);
+      
+  
+      
 
      
       $("#fTemp").html(fTemp + " &#x2109");
