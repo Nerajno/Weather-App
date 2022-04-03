@@ -6,9 +6,6 @@ Here is a link to a live version : https://nerajno.github.io/Weather-App/
 ## Screenshot
 ![Image of ScreenShot](https://github.com/Nerajno/Weather-App/blob/master/ScreenShot.png)
 
-
-~~[testing](http://google.com){:target="_blank"} ~~
-
 ## Built With
 - Font Awesome version 4.5.0 and Bootstrap 3.3.6.
 - Contains background images from Pexel.org
